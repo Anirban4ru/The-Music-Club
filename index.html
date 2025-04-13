@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-ENCORE Music Club | Quantum University</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="assets\fav.ico" type="image/x-icon">
+<link rel="shortcut icon" href="assets\fav.ico" type="image/x-icon">
+</head>
+<body>
+    <audio id="backgroundMusic" loop>
+        <source src="assets\qissa.wav" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>Q-ENCORE</h1>
+                <p>Quantum University Music Club</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        <div class="music-control">
+            <button id="musicToggle" class="music-btn">
+              <i class="fas fa-volume-up"></i>
+            </button>
+          </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Add this video element first -->
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="assets\viz.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <!-- Existing container content -->
+        <div class="container">
+            <div class="hero-content">
+                <h1>Where Music Meets Quantum Excellence</h1>
+                <div class="hero-buttons">
+                    <a href="#events" class="btn btn-primary">Upcoming Events</a>
+                    <a href="#contact" class="btn btn-secondary">Join Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Q-ENCORE</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Q-ENCORE is Quantum University's premier music club, dedicated to fostering musical talent and creating unforgettable experiences. From live performances to workshops and jam sessions, we provide a platform for students to explore and express their passion for music.</p>
+                    <p>Founded in 2020, our club has grown to become a vibrant community of musicians, vocalists, and music enthusiasts from all backgrounds and skill levels.</p>
+                    <h3>What We Offer</h3>
+                    <ul>
+                        <li><i class="fas fa-music"></i> Regular jam sessions</li>
+                        <li><i class="fas fa-chalkboard-teacher"></i> Music workshops</li>
+                        <li><i class="fas fa-microphone-alt"></i> Open mic nights</li>
+                        <li><i class="fas fa-guitar"></i> Instrument training</li>
+                        <li><i class="fas fa-calendar-alt"></i> Annual music festival</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="assets\j-removebg-preview.png" alt="Q-ENCORE Music Club">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Leadership Team</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="team-members">
+                <div class="member">
+                    <div class="member-image">
+                        <img src="assets\Rohan Kakkar.jpg" alt="Rohan Kakkar">
+                    </div>
+                    <h3>Rohan Kakkar</h3>
+                    <p class="position">President</p>
+                    <p class="description">Leading Q-ENCORE with passion and vision to create a thriving musical community.</p>
+                </div>
+                <div class="member">
+                    <div class="member-image">
+                        <img src="assets\Ayush .jpg" alt="Ayush Singh">
+                    </div>
+                    <h3>Ayush Singh</h3>
+                    <p class="position">Vice President</p>
+                    <p class="description">Coordinating club activities and mentoring new members to enhance their musical journey.</p>
+                </div>
+                <div class="member">
+                    <div class="member-image">
+                        <img src="/api/placeholder/200/200" alt="Dhruv Rajput">
+                    </div>
+                    <h3>Dhruv Rajput</h3>
+                    <p class="position">Vice President</p>
+                    <p class="description">Managing creative direction and performance quality for all club events.</p>
+                </div>
+                <div class="member">
+                    <div class="member-image">
+                        <img src="assets\Naina Rawat.jpg" alt="Naina Rawat">
+                    </div>
+                    <h3>Naina Rawat</h3>
+                    <p class="position">Event Coordinator</p>
+                    <p class="description">Planning and executing all club events, workshops, and concerts with excellence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <div class="container">
+            <div class="section-header">
+                <h2>Upcoming Events</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="event-container">
+                <div class="event featured-event">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">MAR</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Spring Music Festival 2025</h3>
+                        <p class="event-meta"><i class="fas fa-map-marker-alt"></i> Main Auditorium | <i class="fas fa-clock"></i> 6:00 PM</p>
+                        <p class="event-description">Our annual flagship event featuring performances from talented students across the university. Join us for an evening of musical brilliance!</p>
+                        <a href="#" class="btn btn-small" id="registerEvent" data-event="Spring Music Festival 2025">Register Now</a>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="event-date">
+                        <span class="day">22</span>
+                        <span class="month">MAR</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Guitar Masterclass Workshop</h3>
+                        <p class="event-meta"><i class="fas fa-map-marker-alt"></i> Music Room 103 | <i class="fas fa-clock"></i> 3:00 PM</p>
+                        <p class="event-description">Learn advanced guitar techniques from professional guitarist and alumnus Vikram Singh.</p>
+                        <a href="#" class="btn btn-small" id="registerEvent" data-event="Guitar Masterclass Workshop">Register Now</a>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="event-date">
+                        <span class="day">29</span>
+                        <span class="month">MAR</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Open Mic Night</h3>
+                        <p class="event-meta"><i class="fas fa-map-marker-alt"></i> Student Center | <i class="fas fa-clock"></i> 7:00 PM</p>
+                        <p class="event-description">Show off your talent at our monthly open mic night. All musical styles welcome!</p>
+                        <a href="#" class="btn btn-small" id="registerEvent" data-event="Open Mic Night">Register Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="add-event-container" id="adminSection" style="display: none;">
+                <h3>Add New Event</h3>
+                <form id="addEventForm">
+                    <div class="form-group">
+                        <label for="eventName">Event Name</label>
+                        <input type="text" id="eventName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventDate">Date</label>
+                        <input type="date" id="eventDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventTime">Time</label>
+                        <input type="time" id="eventTime" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventLocation">Location</label>
+                        <input type="text" id="eventLocation" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="eventDescription">Description</label>
+                        <textarea id="eventDescription" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Event</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Gallery</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="/api/placeholder/400/300" alt="Music Performance">
+                    <div class="gallery-overlay">
+                        <p>Annual Concert 2024</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/api/placeholder/400/300" alt="Band Practice">
+                    <div class="gallery-overlay">
+                        <p>Weekly Jam Session</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/api/placeholder/400/300" alt="Vocal Workshop">
+                    <div class="gallery-overlay">
+                        <p>Vocal Workshop</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/api/placeholder/400/300" alt="Open Mic Night">
+                    <div class="gallery-overlay">
+                        <p>Open Mic Night</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/api/placeholder/400/300" alt="Music Competition">
+                    <div class="gallery-overlay">
+                        <p>Inter-College Competition</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/api/placeholder/400/300" alt="Instrument Training">
+                    <div class="gallery-overlay">
+                        <p>Instrument Training Session</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Have questions or want to join Q-ENCORE? Reach out to us!</p>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>qencore@quantum.edu</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+91 9876543210</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Music Department, Quantum University</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Q-ENCORE</h2>
+                    <p>Quantum University Music Club</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for the latest events and updates</p>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn btn-small">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Q-ENCORE, Quantum University. All Rights Reserved.</p>
+                <p><a href="#" id="adminLogin">Admin Login</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modal-title">Login</h2>
+            <div id="modal-body">
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="notification" class="notification">
+        <p id="notification-message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
