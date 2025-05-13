@@ -6,14 +6,14 @@
     <title>Q-ENCORE Music Club | Quantum University</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" href="assets\fav.ico" type="image/x-icon">
-<link rel="shortcut icon" href="assets\fav.ico" type="image/x-icon">
+    <link rel="icon" href="assets/fav.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/fav.ico" type="image/x-icon">
 </head>
 <body>
-    <audio id="backgroundMusic" loop>
-        <source src="assets\qissa (1).wav" type="audio/mpeg">
+    <audio id="backgroundMusic" loop preload="metadata">
+        <source src="assets\Gratitude _ Amin Toofani (2020 Cover)-VEED.wav" type="audio/wav">
         Your browser does not support the audio element.
-      </audio>
+    </audio>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
@@ -36,17 +36,17 @@
             </div>
         </div>
         <div class="music-control">
-            <button id="musicToggle" class="music-btn">
+            <button id="musicToggle" class="music-btn" aria-label="Toggle Background Music">
               <i class="fas fa-volume-up"></i>
             </button>
-          </div>
+        </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <!-- Add this video element first -->
         <video autoplay muted loop playsinline class="hero-video">
-            <source src="assets\viz.mp4" type="video/mp4">
+            <source src="assets/viz.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         
@@ -75,15 +75,15 @@
                     <p>Founded in 2020, our club has grown to become a vibrant community of musicians, vocalists, and music enthusiasts from all backgrounds and skill levels.</p>
                     <h3>What We Offer</h3>
                     <ul>
-                        <li><i class="fas fa-music"></i> Regular jam sessions</li>
-                        <li><i class="fas fa-chalkboard-teacher"></i> Music workshops</li>
-                        <li><i class="fas fa-microphone-alt"></i> Open mic nights</li>
-                        <li><i class="fas fa-guitar"></i> Instrument training</li>
-                        <li><i class="fas fa-calendar-alt"></i> Annual music festival</li>
+                        <li><i class="fas fa-music" aria-hidden="true"></i> Regular jam sessions</li>
+                        <li><i class="fas fa-chalkboard-teacher" aria-hidden="true"></i> Music workshops</li>
+                        <li><i class="fas fa-microphone-alt" aria-hidden="true"></i> Open mic nights</li>
+                        <li><i class="fas fa-guitar" aria-hidden="true"></i> Instrument training</li>
+                        <li><i class="fas fa-calendar-alt" aria-hidden="true"></i> Annual music festival</li>
                     </ul>
                 </div>
                 <div class="about-image">
-                    <img src="assets\j-removebg-preview.png" alt="Q-ENCORE Music Club">
+                    <img src="assets/j-removebg-preview.png" alt="Q-ENCORE Music Club members jamming">
                 </div>
             </div>
         </div>
@@ -99,7 +99,7 @@
             <div class="team-members">
                 <div class="member">
                     <div class="member-image">
-                        <img src="assets\Rohan Kakkar.jpg" alt="Rohan Kakkar">
+                        <img src="assets/Rohan Kakkar.jpg" alt="Rohan Kakkar - President">
                     </div>
                     <h3>Rohan Kakkar</h3>
                     <p class="position">President</p>
@@ -107,7 +107,7 @@
                 </div>
                 <div class="member">
                     <div class="member-image">
-                        <img src="assets\Ayush .jpg" alt="Ayush Singh">
+                        <img src="assets/Ayush .jpg" alt="Ayush Singh - Vice President">
                     </div>
                     <h3>Ayush Singh</h3>
                     <p class="position">Vice President</p>
@@ -115,15 +115,15 @@
                 </div>
                 <div class="member">
                     <div class="member-image">
-                        <img src="/api/placeholder/200/200" alt="Dhruv Rajput">
+                        <img src="assets/Dhruv Rajput.jpg" alt="Dhruv Suryan - Vice President">
                     </div>
-                    <h3>Dhruv Rajput</h3>
+                    <h3>Dhruv Suryan</h3>
                     <p class="position">Vice President</p>
                     <p class="description">Managing creative direction and performance quality for all club events.</p>
                 </div>
                 <div class="member">
                     <div class="member-image">
-                        <img src="assets\Naina Rawat.jpg" alt="Naina Rawat">
+                        <img src="assets/Naina Rawat.jpg" alt="Naina Rawat - Event Coordinator">
                     </div>
                     <h3>Naina Rawat</h3>
                     <p class="position">Event Coordinator</p>
@@ -148,9 +148,9 @@
                     </div>
                     <div class="event-details">
                         <h3>Spring Music Festival 2025</h3>
-                        <p class="event-meta"><i class="fas fa-map-marker-alt"></i> Main Auditorium | <i class="fas fa-clock"></i> 6:00 PM</p>
+                        <p class="event-meta"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Main Auditorium | <i class="fas fa-clock" aria-hidden="true"></i> 6:00 PM</p>
                         <p class="event-description">Our annual flagship event featuring performances from talented students across the university. Join us for an evening of musical brilliance!</p>
-                        <a href="#" class="btn btn-small" id="registerEvent" data-event="Spring Music Festival 2025">Register Now</a>
+                        <a href="#" class="btn btn-small register-event" data-event="Spring Music Festival 2025">Register Now</a>
                     </div>
                 </div>
                 <div class="event">
@@ -160,9 +160,9 @@
                     </div>
                     <div class="event-details">
                         <h3>Guitar Masterclass Workshop</h3>
-                        <p class="event-meta"><i class="fas fa-map-marker-alt"></i> Music Room 103 | <i class="fas fa-clock"></i> 3:00 PM</p>
+                        <p class="event-meta"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Music Room 103 | <i class="fas fa-clock" aria-hidden="true"></i> 3:00 PM</p>
                         <p class="event-description">Learn advanced guitar techniques from professional guitarist and alumnus Vikram Singh.</p>
-                        <a href="#" class="btn btn-small" id="registerEvent" data-event="Guitar Masterclass Workshop">Register Now</a>
+                        <a href="#" class="btn btn-small register-event" data-event="Guitar Masterclass Workshop">Register Now</a>
                     </div>
                 </div>
                 <div class="event">
@@ -172,9 +172,9 @@
                     </div>
                     <div class="event-details">
                         <h3>Open Mic Night</h3>
-                        <p class="event-meta"><i class="fas fa-map-marker-alt"></i> Student Center | <i class="fas fa-clock"></i> 7:00 PM</p>
+                        <p class="event-meta"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Student Center | <i class="fas fa-clock" aria-hidden="true"></i> 7:00 PM</p>
                         <p class="event-description">Show off your talent at our monthly open mic night. All musical styles welcome!</p>
-                        <a href="#" class="btn btn-small" id="registerEvent" data-event="Open Mic Night">Register Now</a>
+                        <a href="#" class="btn btn-small register-event" data-event="Open Mic Night">Register Now</a>
                     </div>
                 </div>
             </div>
@@ -216,37 +216,37 @@
             </div>
             <div class="gallery-container">
                 <div class="gallery-item">
-                    <img src="/api/placeholder/400/300" alt="Music Performance">
+                    <img src="assets\ONE.jpg" alt="Annual Concert 2024">
                     <div class="gallery-overlay">
                         <p>Annual Concert 2024</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="/api/placeholder/400/300" alt="Band Practice">
+                    <img src="assets\TWO.jpg" alt="Weekly Jam Session">
                     <div class="gallery-overlay">
                         <p>Weekly Jam Session</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="/api/placeholder/400/300" alt="Vocal Workshop">
+                    <img src="assets\SIX.jpg" alt="Vocal Workshop">
                     <div class="gallery-overlay">
                         <p>Vocal Workshop</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="/api/placeholder/400/300" alt="Open Mic Night">
+                    <img src="assets\THREE.jpg" alt="Open Mic Night">
                     <div class="gallery-overlay">
                         <p>Open Mic Night</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="/api/placeholder/400/300" alt="Music Competition">
+                    <img src="assets\FOUR.jpg" alt="Inter-College Competition">
                     <div class="gallery-overlay">
                         <p>Inter-College Competition</p>
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="/api/placeholder/400/300" alt="Instrument Training">
+                    <img src="assets\FIVE.jpg" alt="Instrument Training Session">
                     <div class="gallery-overlay">
                         <p>Instrument Training Session</p>
                     </div>
@@ -267,22 +267,22 @@
                     <h3>Get In Touch</h3>
                     <p>Have questions or want to join Q-ENCORE? Reach out to us!</p>
                     <div class="info-item">
-                        <i class="fas fa-envelope"></i>
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
                         <p>qencore@quantum.edu</p>
                     </div>
                     <div class="info-item">
-                        <i class="fas fa-phone"></i>
+                        <i class="fas fa-phone" aria-hidden="true"></i>
                         <p>+91 9876543210</p>
                     </div>
                     <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                         <p>Music Department, Quantum University</p>
                     </div>
                     <div class="social-icons">
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
                 <div class="contact-form">
@@ -333,7 +333,7 @@
                     <h3>Stay Updated</h3>
                     <p>Subscribe to our newsletter for the latest events and updates</p>
                     <form id="newsletterForm">
-                        <input type="email" placeholder="Your Email" required>
+                        <input type="email" placeholder="Your Email" aria-label="Your Email" required>
                         <button type="submit" class="btn btn-small">Subscribe</button>
                     </form>
                 </div>
@@ -346,9 +346,9 @@
     </footer>
 
     <!-- Modal -->
-    <div id="modal" class="modal">
+    <div id="modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
         <div class="modal-content">
-            <span class="close-button">&times;</span>
+            <span class="close-button" aria-label="Close">&times;</span>
             <h2 id="modal-title">Login</h2>
             <div id="modal-body">
                 <form id="loginForm">
@@ -366,7 +366,7 @@
         </div>
     </div>
 
-    <div id="notification" class="notification">
+    <div id="notification" class="notification" aria-live="polite">
         <p id="notification-message"></p>
     </div>
 
