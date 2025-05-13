@@ -150,6 +150,9 @@ ul {
 .btn-small {
     padding: 8px 20px;
     font-size: 0.9rem;
+    width:200px;
+    background-color: rgba(98, 0, 234, 0.4);
+    color:#f5f5f5;
 }
 
 /* ENHANCED NAVBAR */
